@@ -1,11 +1,11 @@
-public class aeroport {
+public class Aeroport {
     private final String IATA;    //attribut
     private final String Name;
     private final String country;
     double latitude = 0;    // verify impossible coordinate
     double longitude = 0;
 
-    public aeroport(String iata, String name, String country, double latitude, double longitude) { //constructeur
+    public Aeroport(String iata, String name, String country, double latitude, double longitude) { //constructeur
         this.IATA = iata;
         this.Name = name;
         this.country = country;
@@ -33,7 +33,7 @@ public class aeroport {
     }
 
     public static void main(String args[]) {
-        aeroport a1= new aeroport("CGY", "Cergy", "France", 50, 50.5);
+        Aeroport a1= new Aeroport("CGY", "Cergy", "France", 50, 50.5);
         System.out.println(a1.toString());
     }
 

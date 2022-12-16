@@ -54,14 +54,24 @@ public class World {
             }
             return nearest;
         }
+        public double distance (double latitude_1, double longitude_1,double latitude_2, double longitude_2 ){
+            double norme = Math.pow((latitude_1 - latitude_2),2) +
+                    Math.pow((longitude_1 - longitude_2)*Math.cos((latitude_1 - latitude_2)/2),2);
+            return norme;
+        }
 
 
 
     public static void main(String args[]) {
         World w = new World("./Data/airport-codes_no_comma.csv");
+        Aeroport paris = w.findNearest(2.316,48.866);
         System.out.println("Found "+w.getList().size()+" airports.");
         System.out.println(w.findByCode("CDG"));
         System.out.println("Nearest airport to your position is "+w.findNearest(49.035617,2.060325));
+        System.out.println("Nearest airport to your position is "+w.findNearest(48.866,2.316));
+        double distance = w.distance(2.316,48.866,paris.getLongitude(),paris.getLatitude());
+        //System.out.println(paris);
+        System.out.println("Distance entre 2 points "+distance);
 
     }
 

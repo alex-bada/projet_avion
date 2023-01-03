@@ -3,7 +3,9 @@ import javafx.geometry.Point3D;
 import javafx.scene.Group;
 import javafx.scene.PerspectiveCamera;
 import javafx.scene.Scene;
+import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.input.PickResult;
 import javafx.scene.transform.Rotate;
 import javafx.stage.Stage;
 import javafx.scene.layout.Pane;
@@ -27,11 +29,12 @@ public class Interface extends Application {
             if (event.getEventType() == MouseEvent.MOUSE_PRESSED) {
                 System.out.println("Clicked on : (" + event.getSceneX() + ", " + event.getSceneY() + ")");
             }
-            if (event.getEventType() == MouseEvent.MOUSE_DRAGGED) {
+            else if (event.getEventType() == MouseEvent.MOUSE_DRAGGED) {
                 camera.setTranslateZ(1000);
                 //camera.setRotationAxis(new Point3D(0, 1, 0));
                 //camera.setRotate(10);// A vous de compl ́eter
             }
+
         });
 
         primaryStage.setScene(theScene);

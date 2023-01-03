@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b24f40e-ff5f-4b72-9cc1-e4fa221cd39f" name="Changes" comment="class World&#10; with functions &#10;   -find By Code&#10;   - find Nearest">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Earth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interface.java" afterDir="false" />
+    <list default="true" id="9b24f40e-ff5f-4b72-9cc1-e4fa221cd39f" name="Changes" comment="Class Interface and Earth&#10;&#10;Display the Earth (with material) and zoom&#10;&#10;TODO: fix the zoom">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_avion.iml" beforeDir="false" afterPath="$PROJECT_DIR$/projet_avion.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Earth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Earth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +81,8 @@
       <updated>1670503664432</updated>
       <workItem from="1670503666657" duration="13436000" />
       <workItem from="1671175587049" duration="5823000" />
-      <workItem from="1671194246267" duration="7482000" />
+      <workItem from="1671194246267" duration="8196000" />
+      <workItem from="1672729921839" duration="4893000" />
     </task>
     <task id="LOCAL-00001" summary="test 1">
       <created>1670504709958</created>
@@ -107,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670516522466</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Class Interface and Earth&#10;&#10;Display the Earth (with material) and zoom&#10;&#10;TODO: fix the zoom">
+      <created>1671202861266</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671202861266</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,7 +133,8 @@
     <MESSAGE value="test 1" />
     <MESSAGE value="Class aeroport + test" />
     <MESSAGE value="class World&#10; with functions &#10;   -find By Code&#10;   - find Nearest" />
-    <option name="LAST_COMMIT_MESSAGE" value="class World&#10; with functions &#10;   -find By Code&#10;   - find Nearest" />
+    <MESSAGE value="Class Interface and Earth&#10;&#10;Display the Earth (with material) and zoom&#10;&#10;TODO: fix the zoom" />
+    <option name="LAST_COMMIT_MESSAGE" value="Class Interface and Earth&#10;&#10;Display the Earth (with material) and zoom&#10;&#10;TODO: fix the zoom" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -11,12 +11,15 @@ import javafx.stage.Stage;
 import javafx.scene.layout.Pane;
 
 public class Interface extends Application {
+
+    double dragY;
     @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("The one and only Earth");
         Earth root = new Earth();
         Pane pane = new Pane(root);
-        Scene theScene = new Scene(pane, 600, 400, true);
+        Scene theScene = new Scene(pane, 600, 400, false);
+
 
         PerspectiveCamera camera = new PerspectiveCamera(true);         // allow to have a good view of the Earth
         camera.setTranslateZ(-1000);                                      // by further the camera
@@ -27,12 +30,13 @@ public class Interface extends Application {
 
         theScene.addEventHandler(MouseEvent.ANY, event -> {
             if (event.getEventType() == MouseEvent.MOUSE_PRESSED) {
+                dragY = event.getSceneY();
                 System.out.println("Clicked on : (" + event.getSceneX() + ", " + event.getSceneY() + ")");
             }
             else if (event.getEventType() == MouseEvent.MOUSE_DRAGGED) {
-                camera.setTranslateZ(1000);
-                //camera.setRotationAxis(new Point3D(0, 1, 0));
-                //camera.setRotate(10);// A vous de compl ́eter
+                double newTZ = camera.getTranslateZ() + (event.getSceneY() - dragY);
+                if (newTZ > -2000 && newTZ < -500) camera.setTranslateZ(newTZ);
+                dragY = event.getSceneY();
             }
 
         });
